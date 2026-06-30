@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Productivity Hub - Your all-in-one resource for academic success.">
+    <title>Student Productivity Hub | Home</title>
+
+    <meta name="keywords" content="student, productivity, hub, study, planner">
+    <meta name="author" content="StudyHub Team">
+    <meta property="og:title" content="Student Productivity Hub">
+    <meta property="og:description" content="The ultimate student productivity hub designed to help you organize, focus, and achieve your goals.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ui.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">StudyHub</a>
+            <div class="nav-right">
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Maximize Your Academic Potential</h1>
+            <p>The ultimate student productivity hub designed to help you organize, focus, and achieve your goals with ease.</p>
+            <a href="#features" class="btn">Explore Features</a>
+            <button id="modal-btn" class="btn" style="background-color: var(--text-color); color: var(--bg-color); margin-left: 1rem;">Subscribe</button>
+        </section>
+
+        <!-- Animated Counters -->
+        <section class="stats">
+            <div class="stat-item">
+                <div class="counter" data-target="5000">0</div>
+                <p>Active Students</p>
+            </div>
+            <div class="stat-item">
+                <div class="counter" data-target="150">0</div>
+                <p>Universities</p>
+            </div>
+            <div class="stat-item">
+                <div class="counter" data-target="1000000">0</div>
+                <p>Tasks Completed</p>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="card">
+                <h3>Task Management</h3>
+                <p>Keep track of your assignments, exams, and projects all in one organized space.</p>
+            </div>
+            <div class="card">
+                <h3>Time Tracking</h3>
+                <p>Monitor your study sessions and optimize your workflow with our built-in tools.</p>
+            </div>
+            <div class="card">
+                <h3>Resource Library</h3>
+                <p>Access curated study materials, templates, and guides to boost your learning.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Popup -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Subscribe to Updates</h2>
+            <p style="margin: 1rem 0; color: var(--text-muted);">Get the latest study tips and feature updates directly in your inbox.</p>
+            <form id="subscribe-form" style="display: flex; gap: 0.5rem;">
+                <input type="email" placeholder="Enter your email" required style="flex: 1;">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Student Productivity Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

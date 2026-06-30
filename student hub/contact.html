@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Student Productivity Hub">
+    <title>Contact | Student Productivity Hub</title>
+
+    <meta name="keywords" content="student, productivity, hub, study, planner">
+    <meta name="author" content="StudyHub Team">
+    <meta property="og:title" content="Student Productivity Hub">
+    <meta property="og:description" content="The ultimate student productivity hub designed to help you organize, focus, and achieve your goals.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ui.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">StudyHub</a>
+            <div class="nav-right">
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; margin-bottom: 2rem;">Contact Us</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Have questions or need support? Reach out to us!</p>
+        
+        <div class="contact-container">
+            <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@student.edu">
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="1234567890">
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="map-container" style="border-radius: 1rem; overflow: hidden; border: 1px solid var(--border-color);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531615!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sus!4v1620130985202!5m2!1sen!2sus" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Productivity Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
